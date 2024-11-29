@@ -1,0 +1,79 @@
+expression :- value/variable with operator in between.
+operators :- Operators in general are used to perform operations on values and variables. These are standard symbols used for logical and arithmetic operations
+        1. Arithmetic
+                + (Addition Operator)                   1+2         3           left to right
+                - (Subtraction Operator)                2-1         1           left to right
+                * (Multiplication Operator)             2*1         2           left to right
+                / (Float Division Operator)             5/2         2.5         left to right
+                // (Floor Division Operator)            5//2        2           left to right
+                % (Modulas Division Operator)           5%2         1           left to right
+                ** (Power Operator)                     2**3        8           right to left   a ** b ** c i.e. a**(b**c)
+
+                The precedence of Arithmetic Operators in Python is as follows:
+                   1. P - Parentheses
+                   2. E - Exponentiation
+                   3. M - Multiplication (Multiplication and division have the same precedence)
+                   4. D - Division
+                   5. A - Addition (Addition and subtraction have the same precedence)
+                   6. S - Subtraction
+
+        2. Comparison
+                > (Greater Then)                      2>1           True
+                < (Less Then)                         2<1           False
+                == (Equals To)                        2==1          False
+                != (Not Equals To)                    2 != 1        True
+                >= (Greter Then or Equal)             2 >= 1        True
+                <= (Less Then or Equal)               2<=1          False
+
+                In this precedence of all operator is same.
+                Spaces can be present b/w value and operators
+                There is only 2 result (True/False)
+
+        3. Logical
+                not (Logical not)                     not a         False       not 0       true
+                and (Logical and)                     a and b       False
+                or  (Logical or)                      a or b        True
+
+                Precedence is same as defined not >> and >> or
+                There is only 2 result (True/False)
+                It only takes boolean values
+
+        4. Bitwise
+                ~ (Bitwise not)
+                >> (Bitwise right shift)
+                << (Bitwise left shift)
+                & (Bitwise and)
+                ^ (Bitwise XOR)
+                | (Bitwise or)
+
+        5. Assignment
+                =
+                +=
+                -=
+                *=
+                /=
+                %=
+                //=
+                **=
+                &=
+                |=
+                ^=
+                >>=
+                <<=
+
+        6. Identity
+                is
+                is not
+
+        7. Membership
+                in
+                not in
+
+        8. Ternary 
+                syntax: [on_true] if [expression] else [on_false] 
+                eg :
+                    a, b = 10, 20
+                    min = a if a < b else b
+                    print(min)
+
+                    
