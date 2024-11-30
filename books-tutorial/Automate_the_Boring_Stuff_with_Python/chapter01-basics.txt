@@ -136,4 +136,95 @@ operators :- Operators in general are used to perform operations on values and v
                     min = a if a < b else b
                     print(min)
 
-                    
+Data Types
+        A data type is a category for values, and every value belongs to exactly one data type.
+        1. Built In
+                1. Numeric
+                        int     10, -42, 1000000
+                        float   3.14, -0.01, 2.5e3
+                        complex 3 + 4j, where 3 is the real part, and 4j is the imaginary part.
+
+                2. Sequence
+                        str     'hello', "world", """multiline"""
+                        list    [1, 2, 3], ['a', 10, 3.5]
+                        tuple   (1, 2, 3), ('a', 10, 3.5)
+                        range   range(5) (produces numbers 0 to 4)
+
+                3. Mapping Type
+                        dict    {'name': 'John', 'age': 30}
+
+                4. Set Type
+                        set     {1, 2, 3}, {'a', 'b', 'c'}
+                        frozenset frozenset({1, 2, 3}) immutable version of set
+
+                5. Boolean Type
+                        bool    True or False
+
+                6. Binary Type
+                        bytes   
+                                Immutable sequence of bytes.
+                                Each byte is an integer value between 0 and 255.
+                                Often used for:
+                                        Encoding/decoding data.
+                                        Reading binary files.
+                                        Transmitting data over networks.
+
+                                        b = b'hello'  # Using the `b` prefix for a byte literal.
+                                        print(b)  # Output: b'hello'
+
+                                        b = "hello".encode('utf-8')  # Encoding a string into bytes.
+                                        print(b)  # Output: b'hello'
+
+                                        b = bytes([65, 66, 67])  # ASCII codes for 'A', 'B', 'C'.
+                                        print(b)  # Output: b'ABC'
+
+                                        b = bytes(range(5))
+                                        print(b)  # Output: b'\x00\x01\x02\x03\x04'
+
+                                        b = b'hello'
+                                        b[0] = 72  # Raises TypeError: 'bytes' object does not support item assignment
+
+                        bytesarray
+                                Represents a mutable sequence of bytes.
+
+                                        ba = bytearray([65, 66, 67])
+                                        print(ba)  # Output: bytearray(b'ABC')
+
+                                        ba = bytearray(b'hello')
+                                        print(ba)  # Output: bytearray(b'hello')
+
+                                        ba = bytearray(b'hello')
+                                        ba[0] = 72  # Modify the first byte to ASCII value 72 ('H')
+                                        print(ba)  # Output: bytearray(b'Hello')
+
+                                        ba.append(33)  # Append ASCII value 33 ('!')
+                                        print(ba)  # Output: bytearray(b'Hello!')
+
+                                        ba.extend(b' world')
+                                        print(ba)  # Output: bytearray(b'Hello! world')
+
+                        memoryview
+                                Represents a memory-efficient view of a binary object (like bytes or bytearray).
+                                Allows manipulation of binary data without copying it.
+
+                                        b = bytearray(b'hello world')
+                                        mv = memoryview(b)
+                                        print(mv[0])  # Output: 104 (ASCII for 'h')
+
+                                        mv[0] = 72  # Modify the first byte to ASCII value 72 ('H')
+                                        print(b)  # Output: bytearray(b'Hello world')
+
+                                        sub_mv = mv[6:11]  # Slice from index 6 to 10
+                                        print(bytes(sub_mv))  # Output: b'world'
+
+
+        2. User defined
+                Classes and objects allow you to define your custom data types.
+                We will cover this later in class and Object topic
+        3. Type checking
+                To check the type of a variable
+                print(type(x))  # Output: <class 'int'>
+
+        4. Special Type
+                Represents the absence of a value or a null value.
+                x = None
