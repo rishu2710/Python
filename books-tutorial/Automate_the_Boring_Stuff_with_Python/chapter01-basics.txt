@@ -34,40 +34,100 @@ operators :- Operators in general are used to perform operations on values and v
                 and (Logical and)                     a and b       False
                 or  (Logical or)                      a or b        True
 
-                Precedence is same as defined not >> and >> or
+                Precedence is same as defined not >> and >> or 
                 There is only 2 result (True/False)
                 It only takes boolean values
 
-        4. Bitwise
-                ~ (Bitwise not)
+        4. Bitwise (it converts variabls to binary then it works on same.)
+                ~ (Bitwise not)    :            ~ 5             -6
+                        1. Flips all bits of a number. Converts 1 to 0 and 0 to 1.
+                         we can skip (reverse the binary) (1st compliment) (MSB also get changed from 0 --> 1  0 indicates +  and 1 indicates -)
+                         Now we need to find the decimal value of this converted binary so we will invert all binary
+                        2. Add + 1 in binary
+                        i.e. 5        0  0000 0101
+                                      1  1111 1010
+                                      1  0000 0101
+                                                +1
+                                         0000 0110     = 6
+                        and msb (most significant bit) is 1 so final output will be -6
+
                 >> (Bitwise right shift)
+                        Shifts bits of the number to the right, discarding bits shifted out, and fills with the sign bit (arithmetic shift)
+                        x >> y :-
+                                1. it converts x into 8 bit binary no.
+                                2. it shift every binary of x towards right y times
+
+                                i.e. 16 >> 2
+                                        16 =  0001 0000 it need to be shifted 2 positons towards right
+                                              0000 0100 ie. 4 Ans 
                 << (Bitwise left shift)
+                        Similar thing will happen in this but towards left side
                 & (Bitwise and)
+                        This will only provide 1 when both condition satisfies
+                        and if any one condition is 0 it will always prvide 0
+                        eg :- 5 & 3
+                              5 = 0000 0101
+                              3 = 0000 0011
+                                  0000 0001     1 Ans
                 ^ (Bitwise XOR)
+                        When both binary are same it will give 0 as binary and vise versa 1
+                         eg :- 5 ^ 3
+                              5 = 0000 0101
+                              3 = 0000 0011
+                                  0000 0110     6 Ans
+
                 | (Bitwise or)
+                        This will give true if any one condition is true
+                        eg :- 5 | 3
+                              5 = 0000 0101
+                              3 = 0000 0011
+                                  0000 0111     7 Ans
 
         5. Assignment
-                =
-                +=
-                -=
-                *=
-                /=
-                %=
-                //=
-                **=
-                &=
-                |=
-                ^=
-                >>=
-                <<=
+                =               x = 2                    x = 2
+                +=              x += 2                   x = x+2
+                -=              x -= 2                   x = x-2
+                *=              ...
+                /=              ...
+                %=              ...
+                //=             ...
+                **=             ...
+                &=              ...
+                |=              ...
+                ^=              ...
+                >>=             ...
+                <<=             ...
 
-        6. Identity
-                is
-                is not
+        6. Identity :- It used to check if two values are located on the same part of the memory.
+                is      True if the operands are identical           
+                is not  True if the operands are not identical 
+
+                        a = 10
+                        b = 20
+                        c = a
+
+                        print(a is not b)
+                        print(a is c)
 
         7. Membership
-                in
-                not in
+                in      True if value is found in the sequence 
+                not in  True if value is not found in the sequence
+                        It will return either True/False
+
+                        x = 24
+                        y = 20
+                        list = [10, 20, 30, 40, 50]
+
+                        if (x not in list):
+                        print("x is NOT present in given list")
+                        else:
+                        print("x is present in given list")
+
+                        if (y in list):
+                        print("y is present in given list")
+                        else:
+                        print("y is NOT present in given list")
+
 
         8. Ternary 
                 syntax: [on_true] if [expression] else [on_false] 
