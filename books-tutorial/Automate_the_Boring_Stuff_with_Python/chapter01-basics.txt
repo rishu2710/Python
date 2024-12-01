@@ -146,6 +146,7 @@ Data Types
 
                 2. Sequence
                         str     'hello', "world", """multiline"""
+                        blank sring or empty string ''          (A string with no character)
                         list    [1, 2, 3], ['a', 10, 3.5]
                         tuple   (1, 2, 3), ('a', 10, 3.5)
                         range   range(5) (produces numbers 0 to 4)
@@ -228,3 +229,39 @@ Data Types
         4. Special Type
                 Represents the absence of a value or a null value.
                 x = None
+
+
+String operations
+        print('Alice' + 'Bob')                  # output  AliceBob
+        print('Alice' * 5)                      # output  AliceAliceAliceAliceAlice  in 2nd place string won't work here
+
+Key Points 
+        A variable is initialized (or created) the first time a value is stored in it
+
+Variable Defination
+        hyphens are not allowed
+        spaces are not allowed
+        can’t begin with a number, underscore
+        special characters like $ ' are not allowed
+        variables are case sensitive
+
+Functions
+        print()
+                This can be used to print anything in bw brackets and if we leave it as it is it will print an empty line.
+        
+        input()
+                This can be used to take user input, generally it takes every input as a string
+
+        len()
+                This gives the length of any str variable
+
+        str()
+                To convert any variable in string format
+
+        int()
+                To convert any variable in integer format.
+                It is useful if you need to round a floating-point number down.
+                eg. int(7.7) + 1        # output 8
+
+        float()
+                To convert any variable in float format
