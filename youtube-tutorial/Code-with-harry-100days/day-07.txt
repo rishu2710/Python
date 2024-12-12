@@ -1,0 +1,6 @@
+Operators :-
+(path to find D:\workspace\python-workspace\Repositories\Python\books-tutorial\Automate_the_Boring_Stuff_with_Python\chapter01-basics)
+
+Exercise1:-
+Create a calculator capable of performing addition, subtraction, division and multiplication operation of 2no.
+Your program should format the output in human readable format 

@@ -1,0 +1,8 @@
+#day-09.txt
+
+
+typecasting conversion of data from one data type to another data type
+    implicit    (done by python intepreter itself)
+    Explicit    (done by user)
+
+    fns :- int(), str(), float(), complex(), bool() ...

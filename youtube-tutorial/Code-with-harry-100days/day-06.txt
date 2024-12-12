@@ -1,0 +1,2 @@
+variables
+(path to find D:\workspace\python-workspace\Repositories\Python\books-tutorial\Automate_the_Boring_Stuff_with_Python\chapter01-basics)

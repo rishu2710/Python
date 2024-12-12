@@ -1,0 +1,53 @@
+Covered about function argument
+    1. default argument
+            in this function have variable pre defined while creating and if we specify while calling we can modify it
+    2. keyword argument
+            in this when we call function we specify both key and value while calling so with this order wont be a matter.
+    3. variable length argument
+            these are basically used where we can take multiple input with one variable
+            *<variable-name>
+                in this we pass as many variable while calling the function which stores data inside the tuple
+            **<variable-name>
+                in this we pass as many variables while calling the function which stores data in key value and it stores data in dict format.. it means data which will be passed in this should be in key-value pair
+            combination of both 
+
+    4. required argument
+            in this while defining the function we only define the variable and don't specify the variable value, so while calling we need to provide variable value while calling that function.
+
+
+Order of Parameters
+The order of parameters in a function definition should be:
+
+Regular positional arguments.
+*args.
+Default arguments.
+**kwargs.
+
+
+# def average(a, b, c=1):
+#   print("The average is ", (a + b + c) / 2)
+
+
+def average(*numbers):
+  # print(type(numbers))
+  sum = 0
+  for i in numbers:
+    sum = sum + i
+  # print("Average is: ", sum / len(numbers))
+  # return 7
+  return sum / len(numbers)
+
+
+# average(4, 6)
+# average(b=9)
+
+c = average(5, 6, 7, 1)
+print(c)
+
+
+# def name(**name):
+#   # print(type(name))
+#   print("Hello,", name["fname"], name["mname"], name["lname"])
+
+
+# name(mname="Buchanan", lname="Barnes", fname="James")

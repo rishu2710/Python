@@ -1,0 +1,18 @@
+dynamically typed oops language by Guido Van Russom in 1991
+supports functional programming
+Open source programming language
+includes many libraris
+
+
+It can be used in 
+data visualization
+data analytics
+in AI ml
+web application
+handel db
+performing quantitative analysis
+
+
+Day-01 covers 
+1. Python Downlode and install
+2. what is Programming

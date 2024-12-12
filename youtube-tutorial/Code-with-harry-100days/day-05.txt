@@ -1,0 +1,26 @@
+covered about 
+print() 
+    print(value, sep, end)      by default sep = space, end = \n
+    and all should be in b/w ""
+comments  #
+escape sequence in python (in this we are using in print)
+    --> IT IS BASICALLY USED FOR CHARACTERS WHICH CAN'T BE USED IN A STRING 
+            IT IS REPRESENTED AS \(BACKSLASH)<AN-CHARACTER>
+                        EG:- \n   (it is called new line character)
+                            \"  it is useful in like print("Hello \"Raj\" how are you") 
+
+
+
+
+
+
+eg-covered
+
+print("Hello \"Raj\" how are you")  # this was used so that it can print "" as well in output
+print('Hello \'Raj\' how are you') # this will also generate similar output
+print('Hello "Raj" how are you')    # we can also use combination of '' and "" as well in this type of scenarios
+
+print("Hey",5,6)                        # output Hey 5 6
+print("Hey",5,6, sep="~")               # Hey~5~6
+print("Hey",5,6, sep="~", end="007")    # Hey~5~6007
+

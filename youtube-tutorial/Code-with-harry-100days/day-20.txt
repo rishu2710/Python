@@ -1,0 +1,34 @@
+Covered 
+    function
+
+    it is defined with def keyword followd by a name which will be the function name and followed by pranthesis() within which variables 
+    we use return keyword when we want to return anything from function outside wich can be stored in a variable where it was called and return can return any type of value.
+
+
+
+def calculateGmean(a, b):
+  mean = (a*b)/(a+b)
+  print(mean)
+
+def isGreater(a, b):
+  if(a>b):
+    print("First number is greater")
+  else:
+    print("Second number is greater or equal")
+
+def isLesser(a, b):
+  pass
+  
+
+a = 9
+b = 8
+isGreater(a, b)
+calculateGmean(a, b)
+# gmean1 = (a*b)/(a+b)
+# print(gmean1)
+c = 8
+d = 74
+isGreater(c, d)
+calculateGmean(c, d)
+# gmean2 = (c*d)/(c+d)
+# print(gmean2)

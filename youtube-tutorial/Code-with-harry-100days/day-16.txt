@@ -1,0 +1,63 @@
+# match case statement
+# it is simlar to statements 
+_ one is the bydefault case 
+we can use multiple default case
+
+we can pass in parameter
+integer strings, float boolean none
+list, tuple, dict, dict
+case ("a", x):
+case x if x > 10:
+
+match <value>:
+    case <parameter>
+        print()
+    case _:
+        print()
+
+structure 
+
+match value:        # value is basically the value against which we will be testing
+    case 1:
+        print("One")
+    case 2:
+        print("Two")
+    case _:
+        print("Something else")
+
+
+
+eg :- 
+
+data = {"type": "rectangle", "dimensions": {"width": 10, "height": 20}}
+
+match data:
+    case {"type": "rectangle", "dimensions": {"width": w, "height": h}}:
+        print(f"Rectangle with width={w} and height={h}")
+    case {"type": "circle", "radius": r}:
+        print(f"Circle with radius={r}")
+    case _:
+        print("Unknown shape")
+
+match value:
+    case "yes" | "no":  # Matches either "yes" or "no"
+        print("Matched a decision")
+
+# in tutorial video
+
+x = int(input("Enter the value of x: "))
+# x is the variable to match
+match x:
+    # if x is 0
+    case 0:
+        print("x is zero")
+    # case with if-condition
+    case 4:
+        print("case is 4")
+
+    case _ if x!=90:
+        print(x, "is not 90")
+    case _ if x!=80:
+        print(x, "is not 80")
+    case _:
+        print(x)

@@ -1,0 +1,30 @@
+# from day to day.
+
+Things Covered 
+1.   About Python
+2.   Shown about Games and shared codes
+3.   talk about modules (built in and custom defined)
+4.   covered about basics and print statement
+5.   covered about print 
+6.   covered about operators
+7.   covered about operators
+8.   Nothing (Exercise 1)
+9.   covered about typecasting
+10.  covered about input function
+11.  covered about strings
+12.  covered about string mannipulation
+13.  covered about string mannipulation
+14.  if else 
+15.  time module
+16.  match case
+17.  for loop
+18.  while loop
+19.  break and continue
+20.  functions
+21.  arguments in function
+22.  list
+23.  list methods
+24.  tuples 
+25.  tuple operations
+26.  Nothing (Exercise 2)
+27.  Nothing (Exercise 3)

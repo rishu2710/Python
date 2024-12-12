@@ -1,0 +1,5 @@
+modules :- built(no need to install) in and external(need to install)
+
+list of all the built in modules
+https://docs.python.org/3/py-modindex.html
+

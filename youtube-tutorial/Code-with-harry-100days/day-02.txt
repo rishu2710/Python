@@ -1,0 +1,8 @@
+Just talked about games what he created and shared as an sample what can be done with this.
+
+Games shown:-
+face-recognization
+love calculator
+jarvis virtual assistance
+Flappy Bird game
+Snake Game

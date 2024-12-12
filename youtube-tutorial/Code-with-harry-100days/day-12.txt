@@ -1,0 +1,14 @@
+fruit = "Mango"
+mangoLen = len(fruit)
+print(mangoLen)                                     # 5
+# print(fruit[0:4]) # including 0 but not 4         # Mang
+# print(fruit[1:4]) # including 1 but not 4         # ang
+# print(fruit[:5])                                  # Mango
+# print(fruit[0:-3])                                # Ma        this wont start from back it will start from front only
+# print(fruit[:len(fruit)-3])                       # Ma
+print(fruit[-1:len(fruit) - 3])                     # ""  it will generate a empty string because it will be like -1 : 5-3 so it becames as -1:2 since slicing is a operation which goes from left to right but thats not possible here so it will print an empty string.                                 
+print(fruit[-3:-1])                                 # ng
+
+# Quick Quiz:
+# nm = "Harry"
+# print(nm[-4:-2])                                  # ar

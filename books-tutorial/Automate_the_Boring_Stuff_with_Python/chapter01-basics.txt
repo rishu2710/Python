@@ -143,6 +143,7 @@ Data Types
                         int     10, -42, 1000000
                         float   3.14, -0.01, 2.5e3
                         complex 3 + 4j, where 3 is the real part, and 4j is the imaginary part.
+			To create a complex no. we need to use complex(8,2) in this type of format. # 8+2j
 
                 2. Sequence
                         str     'hello', "world", """multiline"""

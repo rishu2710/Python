@@ -1,0 +1,21 @@
+Covered :-
+break and continue in loop
+
+break :- when we want to end anything at that specific point
+
+continue :- when we can to skip a particular point
+
+showed do while loop
+
+# for i in range(12):
+#   if(i == 10):
+#     print("Skip the iteration")
+#     continue
+#   print("5 X", i, "=", 5 * i)
+  
+i = 0
+while True:
+  print(i)
+  i = i + 1
+  if(i%100 == 0):
+    break
